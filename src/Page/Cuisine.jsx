@@ -10,7 +10,7 @@ function Cuisine() {
 
   useEffect(()=>{
     getCusinie(type)
-    //console.log(type)
+    //console.log(type);
   },[type])
 
   const getCusinie=async(name)=>{
