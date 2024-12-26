@@ -110,3 +110,27 @@ svg{
     }
   }
 `
+
+export const Searchbar=styled.div`
+margin:0rem 20rem;
+input{
+  width:100%;
+  height:3rem;
+  border-radius:1rem;
+  border:none;
+  padding:0rem 2rem;
+  font-size:1rem;
+  outline:none;
+  background:linear-gradient(35deg, #494949, #313131);
+  color:white;
+}
+svg{
+  position:absolute;
+  top:50%;
+  left:0%;
+  transform:translate(100%, -50%);
+  color:white;
+  
+  
+}
+`
