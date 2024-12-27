@@ -1,14 +1,16 @@
-import React from 'react'
-import { useState } from 'react'
+import React,{ useState } from 'react'
+
 import {FaSearch} from 'react-icons/fa'
 import { Searchbar } from '../Css'
+import {useNavigate} from 'react-router-dom'
 function Search() {
 
   const [search,setSearch]=useState('')
+  const navigate=useNavigate()
 
   const searchHandler=(e)=>{
     e.preventDefault()
-    
+    navigate("/searched/"+search)
   }
 
   return (
