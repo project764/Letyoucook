@@ -15,8 +15,8 @@ function Search() {
 
   return (
     <Searchbar onSubmit={searchHandler}>
-      <div width='100%' position='relative'>
-         <FaSearch></FaSearch>
+      <div style={{ width: '100%', position: 'relative' }}>
+        <FaSearch />
         <input 
         onChange={(e)=>setSearch(e.target.value)}
         type='text' 
