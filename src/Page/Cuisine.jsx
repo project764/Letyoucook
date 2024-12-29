@@ -25,8 +25,10 @@ function Cuisine() {
       {cuisine.map((item)=>{
         return(
           <Filtercard key={item.id}>
-            <img src={item.image} alt='' />
-            <h4>{item.title}</h4>
+            <Link to={"/recipeintro/"+item.id}>
+              <img src={item.image} alt='' />
+              <h4>{item.title}</h4>
+            </Link>
           </Filtercard>
         )
       })}

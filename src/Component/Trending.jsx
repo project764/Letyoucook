@@ -2,6 +2,7 @@ import React, { useEffect,useState } from 'react'
 import { Wrapper,Card, Gradient } from '../Css'
 import {Splide,SplideSlide} from "@splidejs/react-splide"
 import "@splidejs/splide/dist/css/splide.min.css"
+import { Link } from 'react-router-dom'
 
 function Trending() {
   const [trend,setTrend]=useState([])
@@ -40,11 +41,14 @@ function Trending() {
       {
         return(
           <SplideSlide key={recipe.id}>
-          <Card key={recipe.id}>
-            <p>{recipe.title}</p>
-            <img src={recipe.image} alt={recipe.title}/>
-            <Gradient/>
+          <Card >
+              <Link to={"/recipeintro/"+recipe.id}>
+              <p>{recipe.title}</p>
+              <img src={recipe.image} alt={recipe.title}/>
+              <Gradient/>
+            </Link> 
           </Card>
+            
           </SplideSlide>
         )
       })}
