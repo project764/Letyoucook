@@ -12,7 +12,7 @@ function Searched() {
   const getSearched = async (name) => {
     try {
       setLoading(true);  // Set loading true when the fetch starts
-      const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${import.meta.env.VITE_KEY}&query=${name}&number=20`);
+      const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${import.meta.env.VITE_KEY}&query=${name}&number=20&includeIngredients=${name}`);  // Fetch recipes based on search query
       
       if (!response.ok) {
         throw new Error('Failed to fetch recipes');
