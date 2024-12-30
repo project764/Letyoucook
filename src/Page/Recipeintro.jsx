@@ -11,7 +11,7 @@ function Recipeintro() {
   const [activetab,setActiveTab]=useState('instruction')
 
   const fecthDeatils=async()=>{
-    const data=await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${import.meta.env.VITE_KEY}`)
+    const data=await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${import.meta.env.VITE_KEY}&includeNutrition=true`)
     const detaildata=await data.json()
     console.log(detaildata)
     setDetails(detaildata)
@@ -34,6 +34,8 @@ function Recipeintro() {
           Instruction</Button>
         <Button className={activetab === 'ingredients'? 'active':''} onClick={()=>setActiveTab("ingredients")}>
           Ingredients</Button>
+        <Button className={activetab === 'nutrition'? 'active':''} onClick={()=>setActiveTab("nutrition")}>
+          Nutritions</Button>
           
         {activetab === 'instruction' && (
           <div>
@@ -43,13 +45,23 @@ function Recipeintro() {
         )} 
 
         {activetab === 'ingredients' && (
-          <ul>
+          <ul key={details.id}>
           {details.extendedIngredients?.map((ingredient)=>{
             return(
               <li key={ingredient.id}>{ingredient.original}</li>
             )
           })}
         </ul>
+        )}
+
+        {activetab === 'nutrition' && (
+          <ul key={details.name}>
+          {details.nutrition?.nutrients.map((nutrient)=>{
+            return(
+              <li key={nutrient.name}>{nutrient.name} : {nutrient.amount}{nutrient.unit}</li>
+            )
+          })}
+          </ul>
         )}
         
       </Info>
