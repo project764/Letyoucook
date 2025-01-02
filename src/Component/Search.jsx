@@ -10,11 +10,11 @@ function Search() {
 
   const searchHandler=(e)=>{
     e.preventDefault()
-    navigate("/searched/"+search)
+    navigate(`/Searched/${search}`)
   }
 
   return (
-    <Searchbar onSubmit={searchHandler}>
+    <Searchbar>
       <div style={{ width: '100%', position: 'relative' }}>
         <FaSearch />
         <input 
@@ -23,6 +23,7 @@ function Search() {
         placeholder='Search' 
         value={search} 
       />
+      <button onClick={searchHandler}>Search</button>
       </div>
     </Searchbar>
   )
