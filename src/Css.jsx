@@ -112,7 +112,7 @@ svg{
 `
 
 export const Searchbar=styled.div`
-margin:0rem 20rem;
+margin:1rem 20rem;
 input{
   width:100%;
   height:3rem;
@@ -167,4 +167,30 @@ font-weight:600;
 export const Info=styled.div`
 margin-left:2rem;
 `
+export const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(35deg, #494949, #313131);
+  color: white;
 
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  li {
+    margin-right: 72rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+    
+    
+  
+    
+  
+
+  
+`;
