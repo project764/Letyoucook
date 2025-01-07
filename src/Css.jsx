@@ -133,6 +133,19 @@ svg{
   
   
 }
+button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+          color:white;
+        }
 `
 
 export const Detailwrapper=styled.div`
@@ -180,12 +193,14 @@ export const Nav = styled.nav`
     list-style: none;
   }
   li {
-    margin-right: 72rem;
+    margin-right: 2rem;
   }
+    
   a {
     text-decoration: none;
     color: white;
   }
+    s
     
     
   
