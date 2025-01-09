@@ -27,7 +27,7 @@ function Search() {
         onChange={(e)=>setSearch(e.target.value)}
         
         type='text' 
-        placeholder='Search' 
+        placeholder='Search or ingred1,ingred2..' 
         value={search} 
         
       />
