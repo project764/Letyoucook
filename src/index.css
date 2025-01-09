@@ -8,18 +8,22 @@
 
 body{
   margin: 0% 0%;
+  background-color: black;
 }
 
 h4{
   font-size: 1rem;
-  color: rgb(56,56,56);
+  color: rgb(227, 224, 224);
 }
 h3{
   font-size: 1.5rem;
-  color: rgb(56,56,56);
+  color: rgb(211, 206, 206);
   line-height: 2.5rem;
   margin: 2rem 0rem;
 }
 a{
-  color: rgb(56,56,56);
+  color: rgb(253, 247, 247);
+}
+.p{
+  color: azure;
 }

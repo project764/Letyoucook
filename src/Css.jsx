@@ -159,6 +159,7 @@ display:flex;
 
 h2{
   margin-bottom:2rem;
+  
 }
 li{
   font-size:1.5rem;
@@ -179,6 +180,7 @@ font-weight:600;
 
 export const Info=styled.div`
 margin-left:2rem;
+color:white;
 `
 export const Nav = styled.nav`
   display: flex;
