@@ -63,6 +63,10 @@ grid-gap:3rem;
 `
 
 export const Filtercard=styled.div`
+min-height: 12rem;
+border-radius: 2rem;
+overflow: hidden;
+
 img{
   width:100%:
   border-radius:2rem;
