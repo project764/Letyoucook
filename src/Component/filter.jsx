@@ -11,23 +11,23 @@ function Filter() {
   return (
     <List>
       <SLink to={'/Cuisine/Italian'}>
-        <FaPizzaSlice/>
+        
         <h4>Italian</h4>
       </SLink>
       <SLink to={'/Cuisine/American'}>
-        <FaHamburger/>
+        
         <h4>American</h4>
       </SLink>
       <SLink to={'/Cuisine/Chinese'}>
-        <GiNoodles/>
+        
         <h4>Chinese</h4>
       </SLink>
       <SLink to={'/Cuisine/Japanese'}>
-        <GiChopsticks/>
+        
         <h4>Japanese</h4>
       </SLink>
       <SLink to={'/Cuisine/Indian'}>
-        <PiCookingPotBold />
+        
         <h4>Indian</h4>
       </SLink>
       

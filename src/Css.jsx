@@ -88,17 +88,18 @@ border-radius:50%;
 margin-right:2rem;
 text-decoration:none;
 background:linear-gradient(35deg, #494949, #313131);
-width:6rem;
-height:6rem;
+width:8rem;
+height:7rem;
 cursor:pointer;
 transform:scale(0.5);
 
 h4{
   color:white;
-  font-size:1rem;
+  font-size:1.5rem;
   text-align:center;
 }
 svg{
+  text-align:center;
   color:white;
   font-size:1.5rem;
   
@@ -200,13 +201,15 @@ export const Nav = styled.nav`
   }
   li {
     margin-right: 2rem;
+    text-transform: uppercase;
+    font-weight:600;
   }
     
   a {
     text-decoration: none;
     color: white;
   }
-    s
+    
     
     
   
