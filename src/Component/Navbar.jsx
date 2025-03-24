@@ -10,7 +10,7 @@ const Navbar = () => {
           <Link to="/">LetYouCook</Link>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>
+          <a href="http://localhost:3000/">Blog</a>
         </li>
       </ul>
     </Nav>
